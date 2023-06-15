@@ -1,15 +1,10 @@
-//query selector//
-var header = document.querySelector("#main-header");
-header.style.borderBottom=" solid 4px #ccc";
+//queryselectorall//
 
-var input= document.querySelector('input');
-input.value="hello world";
+var Items= document.querySelectorAll('.list-group-item');
+Items[1].style.backgroundColor='green';  
 
-var submit= document.querySelector('input[type="submit"]');
-submit.value="send";
+var odd= document.querySelectorAll('li:nth-child(odd)');
+for(var i=0;i< odd.length;i++){
+    odd[i].style.backgroundColor="#f4f4f4";
 
-var seconditem= document.querySelector('.list-group-item:nth-child(2)');
-seconditem.style.backgroundColor='green';
-
-var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
-  thirdItem.style.display = 'none';
+}
