@@ -51,7 +51,7 @@ newDiv.id='hello1';
 newDiv.setAttribute('title', 'Hello Div');
 
 //create a textnode
-var ndtext= document.createTextNode('hello world');
+var ndtext= document.createTextNode('hello');
 //add text to div
 newDiv.appendChild(ndtext);
 
@@ -61,6 +61,13 @@ var h1= document.querySelector('header h1');
 console.log(newDiv);
 newDiv.style.fontSize='30px';
 container.insertBefore(newDiv, h1);
+
+
+var items = document.getElementById('items');
+var newItem = document.createElement('li');
+newItem.classList.add('list-group-item');
+newItem.textContent = 'Hello World';
+items.insertBefore(newItem, items.firstChild);
 
 
 
